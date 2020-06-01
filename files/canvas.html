@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <!-- Back To Home -->
+    <div class="section">
+        <a href="../index.html">Back to Home</a>
+    </div>
+    <!-- Back To Home end -->
+
+    <h1>Canvas</h1>
+    <canvas id="canvas1" width="400" height="400">
+    </canvas>
+    <script>
+        var canvas = document.getElementById('canvas1');
+        ctx = canvas.getContext('2d');
+        ctx.font = "bold 18px Tahoma";
+        ctx.textAlign = "start";
+        ctx.fillText("start", 10, 30);
+        ctx.translate(100, 150);
+        ctx.fillText("after translate", 0, 0);
+        ctx.rotate(1);
+        ctx.fillText("after rotate", 0, 0);
+        ctx.scale(1.5, 4);
+        ctx.fillText("after scale", 0, 20);
+    </script>
+</body>
+
+</html>
